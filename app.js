@@ -64,7 +64,7 @@ function speak(){
     }
     if(textInput.value !== ''){
          // background animation
-        body.style.background = 'url(wave.gif)';
+        body.style.background = '#141414 url(wave.gif)';
         body.style.backgroundRepeat = 'repeat-x';
         body.style.backgroundSize = '100% 100%'; 
         // speak text   
