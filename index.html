@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type-n-speak</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="app-logo">
+            <img src="logo.png" alt="">
+            <h1>Type-<span>n</span>-Speak</h1>
+        </div>
+        <div class="form-section">
+            <form action="">
+                <div class="text-area">
+                    <textarea name="" id="text-input" cols="30" rows="10" placeholder="Type anything..."></textarea>
+                </div>
+                <div class="rate">
+                    <label for="rate">Rate</label>
+                    <input type="range" name="" id="rate" min="0.5" max="2" value="1" step="0.1">
+                    <div id="rate-value">1</div>
+                </div>
+                <div class="pitch">
+                    <label for="pitch">Pitch</label>
+                    <input type="range" name="" id="pitch" min="0" max="2" value="1" step="0.1">
+                    <div id="pitch-value">1</div>
+                </div>
+                <div class="voice-select">
+                    <select id="voice-selection"></select>
+                </div>
+                <div class="button">
+                    <button class="btn">Speak it</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
