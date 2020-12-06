@@ -62,7 +62,7 @@ label{
 }
 .container .form-section .voice-select select{
     width: 500px;
-    height: 30px;
+    height: 40px;
     border-radius: 8px;
     outline: none;
     margin: 20px;
@@ -77,3 +77,35 @@ label{
     outline: none;
 }
 
+@media only screen and (max-width: 600px){
+    .container .app-logo img{
+        margin-top: 50px;
+        width: 100px;
+        height: 100px;
+    }
+    .container .app-logo h1{
+        font-size: 30px;
+    }
+    .container .form-section textarea{
+        width: 300px;
+        height: 40px;
+    }
+    label{
+        font-size: 17px;
+    }
+    .container .form-section #rate-value,
+    .container .form-section #pitch-value{
+        width: 20px;
+        height: 20px;
+    }
+    .container .form-section input[type=range]{
+        width: 250px;
+    }
+    .container .form-section .voice-select select{
+        width: 300px;
+        height: 30px;
+    }
+    .container .form-section .button button{
+        width: 300px;
+    }
+}
