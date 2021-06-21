@@ -1,111 +1,115 @@
-body{
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat Alternates', sans-serif;
-    height: 100vh;
-    background: #141414;
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat Alternates", sans-serif;
+  height: 100vh;
+  background-image: radial-gradient(
+    circle farthest-corner at 12.3% 19.3%,
+    rgba(85, 88, 218, 1) 0%,
+    rgba(95, 209, 249, 1) 100.2%
+  );
 }
-.container{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: -1000;
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: -1000;
 }
-.container .app-logo{
-    text-align: center;
-    margin-top: 20px;
+.container .app-logo {
+  text-align: center;
+  margin-top: 20px;
 }
-.container .app-logo img{
-    width: 150px;
-    height: 150px;
+.container .app-logo img {
+  width: 150px;
+  height: 150px;
 }
-.container .app-logo h1{
-    font-size: 50px;
-    color: #e8e8e8;
-    margin-top: 10px;
-    font-weight: 600;
+.container .app-logo h1 {
+  font-size: 50px;
+  color: #e8e8e8;
+  margin-top: 10px;
+  font-weight: 600;
 }
-.container .app-logo h1 span{
-    color: #fd8c04;
+.container .app-logo h1 span {
+  color: #fd8c04;
 }
-.container .form-section{
-    text-align: center;
-    color: #fff;
+.container .form-section {
+  text-align: center;
+  color: #fff;
 }
-.container .form-section textarea{
-    width: 500px;
-    height: 50px;
-    border-radius: 8px;
-    font-size: 15px;
-    padding: 15px;
-    outline: none;
-    background-color: #e8e8e8;
+.container .form-section textarea {
+  width: 500px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 15px;
+  padding: 15px;
+  outline: none;
+  background-color: #e8e8e8;
 }
-label{
-    font-size: 20px;
-    display: block;
+label {
+  font-size: 20px;
+  display: block;
 }
 .container .form-section #rate-value,
-.container .form-section #pitch-value{
-    background-color: #f05454;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 4px;
-    margin-left: 20px;
+.container .form-section #pitch-value {
+  background-color: #f05454;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-left: 20px;
 }
-.container .form-section input[type=range]{
-    width: 450px;
-    height: 4px;
-    background-color: #e8e8e8;
+.container .form-section input[type="range"] {
+  width: 450px;
+  height: 4px;
+  background-color: #e8e8e8;
 }
-.container .form-section .voice-select select{
-    width: 500px;
-    height: 40px;
-    border-radius: 8px;
-    outline: none;
-    margin: 20px;
-    background-color: #e8e8e8;
+.container .form-section .voice-select select {
+  width: 500px;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  margin: 20px;
+  background-color: #e8e8e8;
 }
-.container .form-section .button button{
-    width: 500px;
-    height: 30px;
-    border-radius: 8px;
-    font-size: 18px;
-    font-family: 'Montserrat Alternates', sans-serif;
-    outline: none;
+.container .form-section .button button {
+  width: 500px;
+  height: 30px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-family: "Montserrat Alternates", sans-serif;
+  outline: none;
 }
 
-@media only screen and (max-width: 600px){
-    .container .app-logo img{
-        margin-top: 50px;
-        width: 100px;
-        height: 100px;
-    }
-    .container .app-logo h1{
-        font-size: 30px;
-    }
-    .container .form-section textarea{
-        width: 300px;
-        height: 40px;
-    }
-    label{
-        font-size: 17px;
-    }
-    .container .form-section #rate-value,
-    .container .form-section #pitch-value{
-        width: 20px;
-        height: 20px;
-    }
-    .container .form-section input[type=range]{
-        width: 250px;
-    }
-    .container .form-section .voice-select select{
-        width: 300px;
-        height: 30px;
-    }
-    .container .form-section .button button{
-        width: 300px;
-    }
+@media only screen and (max-width: 600px) {
+  .container .app-logo img {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+  }
+  .container .app-logo h1 {
+    font-size: 30px;
+  }
+  .container .form-section textarea {
+    width: 300px;
+    height: 40px;
+  }
+  label {
+    font-size: 17px;
+  }
+  .container .form-section #rate-value,
+  .container .form-section #pitch-value {
+    width: 20px;
+    height: 20px;
+  }
+  .container .form-section input[type="range"] {
+    width: 250px;
+  }
+  .container .form-section .voice-select select {
+    width: 300px;
+    height: 30px;
+  }
+  .container .form-section .button button {
+    width: 300px;
+  }
 }
